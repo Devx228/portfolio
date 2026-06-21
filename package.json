@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "NEXT_DIST_DIR=.next-dev next dev",
     "dev:live": "NEXT_DIST_DIR=.next-dev next dev --port 3003",
-    "build": "NEXT_DIST_DIR=.next-verify next build",
-    "start": "NEXT_DIST_DIR=.next-verify next start",
+    "build": "next build",
+    "build:verify": "NEXT_DIST_DIR=.next-verify next build",
+    "start": "next start",
+    "start:verify": "NEXT_DIST_DIR=.next-verify next start",
     "lint": "eslint . --max-warnings=0"
   },
   "dependencies": {
