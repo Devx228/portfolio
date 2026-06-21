@@ -1,0 +1,30 @@
+# Reference material cloned for portfolio evidence mapping
+/repos/
+/reference-repos/
+/oracle-notes
+/inputs/
+/handoffs/
+
+# Local/private files
+.env
+.env.*
+*.pem
+*.key
+*.sqlite3
+*.db
+nohup.out
+.DS_Store
+
+# Future Next.js / Node artifacts
+node_modules/
+.npm-cache/
+.npm-cache-public/
+.next/
+.next-dev/
+.next-verify/
+out/
+dist/
+coverage/
+
+# Logs
+*.log
