@@ -97,10 +97,17 @@ export const profile = {
   github: "https://github.com/Devx228/",
   linkedin: "https://www.linkedin.com/in/devansh-a-dhok-516264303/",
   headline:
-    "CSE undergrad at IIT Kanpur, building software with depth,  purpose and real-world impact.",
+    "CSE undergrad at IIT Kanpur, building software with purpose and impact.",
   seoDescription:
     "Computer Science undergraduate at IIT Kanpur working across AI, medical technology, agent infrastructure, machine learning, full-stack platforms, and low-level systems.",
 };
+
+export const heroBootLines = [
+  "booting devansh.shell",
+  "loading selected work",
+  "mounting projects",
+  "syncing research",
+];
 
 export const projects: Project[] = [
   {
@@ -703,7 +710,7 @@ export const projects: Project[] = [
     highlights: [
       "Integrated register, memory, decode, ALU, PC logic, and writeback modules.",
       "Testbench checks PC, registers, and memory state.",
-      "Good systems signal alongside research-heavy ML work.",
+      "Low-level systems work alongside the ML and research projects.",
     ],
     metrics: [
       "Repo supports instruction-level control flow and testbench verification.",
@@ -880,7 +887,7 @@ export const projects: Project[] = [
     highlights: [
       "Student and teacher dashboards.",
       "Authentication, test creation, data retrieval, bulk upload, and automatic generation APIs.",
-      "Kept low-weight because the current portfolio should emphasize ML, research, RL, and systems depth.",
+      "Product-facing web work alongside the research and systems projects.",
     ],
     metrics: [
       "The platform is aiming to support 500+ students and 25+ teachers.",

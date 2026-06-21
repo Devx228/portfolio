@@ -7,7 +7,7 @@ import { internshipProjects, Project, projectCardCopy, projects } from "@/conten
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Project dossiers for speech recognition, medical imaging, learning agents, document question-answering, systems, and full-stack work.",
+  description: "Projects across speech recognition, medical imaging, learning agents, document question-answering, systems, and full-stack work.",
 };
 
 export default function ProjectsPage() {
@@ -33,17 +33,16 @@ export default function ProjectsPage() {
   return (
     <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:py-20">
       <SectionHeading
-        eyebrow="Project dossiers"
-        title="Portfolio tracks"
-        description="Internships are separated from projects, then the remaining work is grouped by research, systems, AI search, and product tracks."
+        eyebrow="Projects"
+        title="Selected technical work"
+        description="Internships are shown first, followed by research, systems, AI search, and product work."
       />
 
       <div className="space-y-12">
         {internshipProjects.length > 0 ? (
           <section>
-            <div className="mb-5 flex items-center justify-between border-b border-signal-green/30 pb-3">
+            <div className="mb-5 border-b border-signal-green/30 pb-3">
               <h2 className="font-mono text-sm uppercase tracking-[0.22em] text-signal-green">Internships</h2>
-              <span className="font-mono text-xs text-slate-500">{internshipProjects.length} items</span>
             </div>
             <div className="grid gap-5 lg:grid-cols-2">
               {internshipProjects.map((project) => (
@@ -99,9 +98,8 @@ function ProjectSection({
 
   return (
     <section>
-      <div className="mb-5 flex items-center justify-between border-b border-white/10 pb-3">
+      <div className="mb-5 border-b border-white/10 pb-3">
         <h2 className="font-mono text-sm uppercase tracking-[0.22em] text-signal-cyan">{title}</h2>
-        <span className="font-mono text-xs text-slate-500">{items.length} items</span>
       </div>
       {children}
     </section>
@@ -140,7 +138,7 @@ function ProjectStrip({ projects: stripProjects }: { projects: Project[] }) {
                   href={`/projects/${project.slug}`}
                   className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-md border border-signal-cyan/30 bg-signal-cyan/10 px-3 py-2 text-sm font-medium text-signal-cyan transition group-hover/card:bg-signal-cyan group-hover/card:text-graphite-950"
                 >
-                  More details
+                  Details
                   <ArrowUpRight className="h-4 w-4" />
                 </Link>
               </div>

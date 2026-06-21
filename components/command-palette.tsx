@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Command } from "cmdk";
 import { Search, X } from "lucide-react";
@@ -26,11 +26,6 @@ export function CommandPalette({
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
-
-  const flatItems = useMemo(
-    () => commandGroups.flatMap((group) => group.items.map((item) => ({ ...item, heading: group.heading }))),
-    [],
-  );
 
   const run = (href: string) => {
     setOpen(false);
@@ -82,7 +77,7 @@ export function CommandPalette({
         </div>
         <Command.List className="max-h-[420px] overflow-y-auto p-2">
           <Command.Empty className="px-3 py-8 text-center text-sm text-slate-500">
-            No command found.
+            No matching result.
           </Command.Empty>
           {commandGroups.map((group) => (
             <Command.Group
@@ -131,7 +126,7 @@ export function CommandPalette({
           </Command.Group>
         </Command.List>
         <div className="border-t border-white/10 px-4 py-3 font-mono text-[11px] text-slate-500">
-          {flatItems.length} indexed commands. Escape closes the palette.
+          Press Escape to close.
         </div>
       </Command.Dialog>
 

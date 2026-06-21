@@ -13,9 +13,9 @@ export default function ContactPage() {
   return (
     <div className="mx-auto max-w-4xl px-5 py-14 sm:px-8 lg:py-20">
       <SectionHeading
-        eyebrow="Contact dock"
-        title="Public channels only"
-        description="Email, GitHub, and LinkedIn are the only contact links exposed by the first version."
+        eyebrow="Contact"
+        title="Public channels"
+        description="Email, GitHub, and LinkedIn are the public contact links for this profile."
       />
       <div className="grid gap-4 sm:grid-cols-3">
         <ContactCard icon={Mail} label="Email" value={profile.email} href={`mailto:${profile.email}`} />
